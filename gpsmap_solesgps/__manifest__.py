@@ -28,6 +28,7 @@ Main Features
 """,
     'depends': [
         'gpsmap',
+        'sale',
     ],
     'data': [
          'security/security.xml',
