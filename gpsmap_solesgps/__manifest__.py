@@ -29,6 +29,7 @@ Main Features
     'depends': [
         'gpsmap',
         'sale',
+        'taecel',
     ],
     'data': [
          'security/security.xml',
