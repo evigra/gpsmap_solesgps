@@ -28,7 +28,7 @@ Main Features
 """,
     'depends': [
         'gpsmap',
-        'sale',
+        'sale_management',
         'taecel',
     ],
     'data': [
