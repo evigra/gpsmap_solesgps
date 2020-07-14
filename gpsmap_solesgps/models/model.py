@@ -6,7 +6,8 @@ import random
 from dateutil.relativedelta import relativedelta
 from odoo import api, fields, models, _
 
-class positions(models.Model):
-    _inherit = "gpsmap.positions"
+class geofence(models.Model):
+    _inherit = "gpsmap.geofence"
+    company_id = fields.Many2one('res.company', 'Company', required=True)
     
 
