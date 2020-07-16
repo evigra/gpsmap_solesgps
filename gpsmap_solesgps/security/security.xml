@@ -14,11 +14,11 @@
 
 
 
+
+<!--
         <record id="gpsmap.access_gpsmap_positions_user" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id','=',user.company_id)]</field>
         </record>
-
-<!--
 
         <record id="gpsmap.access_gpsmap_positions_temporal" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id','=',user.company_id)]</field>
