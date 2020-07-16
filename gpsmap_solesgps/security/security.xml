@@ -11,7 +11,7 @@
 
 
 
-    <!--
+    
         <record id="gpsmap.access_gpsmap_positions_temporal" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>
         </record>
@@ -22,7 +22,7 @@
             <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>
         </record>
         
-        -->
+    
         
         
 </odoo>
