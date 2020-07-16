@@ -7,11 +7,22 @@
         <record id="gpsmap.access_gpsmap_vehicle_manager" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>            
         </record>
+
+
+
+
+
         <record id="gpsmap.access_gpsmap_positions_temporal" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>
         </record>
         <record id="gpsmap.access_gpsmap_positions_user" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>
         </record>
-    
+        <record id="gpsmap.access_gpsmap_positions_manager" model="ir.rule">
+            <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>
+        </record>
+        
+        
+        
+        
 </odoo>
