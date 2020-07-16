@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <odoo>
-
+<!--
 
         <record id="gpsmap.access_gpsmap_vehicle_user" model="ir.rule">
             <field name="domain_force">[('company_id','=',user.company_id)]</field>            
@@ -23,7 +23,7 @@
             <field name="domain_force">[('deviceid.company_id','=',user.company_id)]</field>
         </record>
         
-    
+-->    
         
         
 </odoo>
