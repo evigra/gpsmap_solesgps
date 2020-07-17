@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-
+    <!--
     <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.geofence.form_inherit</field>
         <field name="model">gpsmap.geofence</field>
