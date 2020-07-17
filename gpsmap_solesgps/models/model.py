@@ -8,6 +8,6 @@ from odoo import api, fields, models, _
 
 class geofence(models.Model):
     _inherit = "gpsmap.geofence"
-    company_id = fields.Many2one('res.company', 'Company', required=True)
+    
     
 
