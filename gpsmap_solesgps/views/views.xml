@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="gpsmap.gpsmap_geofence_view_form"/>
         <field name="arch" type="xml">               
             <xpath expr="//form/group/field[@name='points']" position="after">            
-                <field name="company_id"/>                    
+                <field name="company_id" groups="base.group_multi_company"/>                    
             </xpath>                
         </field>
     </record>        
