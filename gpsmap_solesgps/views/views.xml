@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-    <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
+    <record id='gpsmap_geofence_view_form' model='ir.ui.view'>
         <field name="name">gpsmap.geofence.form</field>
+        <field name="model">gpsmap.geofence</field>
+        <field name="arch" type="xml">
+
+    <record id="view_gpsmap_vehicle_form_inherit" model="ir.ui.view">
+        <field name="name">gpsmap.vehicle.form</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+
+
+
+    <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
+        <field name="name">gpsmap.geofence.form_inherit</field>
         <field name="model">gpsmap.geofence</field>
         <field name="inherit_id" ref="gpsmap.gpsmap_geofence_view_form"/>
         <field name="arch" type="xml">               
