@@ -33,6 +33,7 @@ Main Features
     ],
     'data': [
          'security/security.xml',
+         'views/views.xml',
     ],
 
 #    'demo': ['data/solesgpsmap_demo.xml'],
