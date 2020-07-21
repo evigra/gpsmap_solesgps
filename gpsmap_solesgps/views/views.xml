@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+
+    <!-- GEOFENCE -->
     <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.geofence.form_inherit</field>
         <field name="model">gpsmap.geofence</field>
@@ -10,8 +12,18 @@
             </xpath>                
         </field>
     </record>        
-    <!-- GEOFENCE -->
+    
 
+    <record id="gpsmap_fleet_vehicle_view_kanban_inherit" model="ir.ui.view">
+        <field name="name">gpsmap.fleet.vehicle.kanban_inherit</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_kanban"/>
+        <field name="arch" type="xml">               
+            <xpath expr="//field[@name='license_plate']" position="before">            
+                <field name="company_id" groups="gpsmap.gpsmap_group_manager"/>                    
+            </xpath>                
+        </field>
+    </record> 
 </odoo>
 
 
