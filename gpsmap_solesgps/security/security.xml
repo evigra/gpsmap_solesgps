@@ -16,8 +16,6 @@
         </record>
 
 
-
-
         <record id="gpsmap.access_gpsmap_geofence_temporal" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>
         </record>
