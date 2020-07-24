@@ -11,15 +11,16 @@
             <xpath expr="//header/button[@id='action_clearpoint']" position="before">            
                 <field name="company_id" groups="base.group_multi_company"/>                    
             </xpath> 
-            <xpath expr="//group/field[@name='temporal_id']" position="after">            
-                <field name="recargado" groups="gpsmap.gpsmap_group_god"/>                    
-            </xpath>                            
         </field>
     </record>        
     
     
     
 <!--
+            <xpath expr="//group/field[@name='temporal_id']" position="after">            
+                <field name="recargado" groups="gpsmap.gpsmap_group_god"/>                    
+            </xpath>                            
+
     <record id="gpsmap_fleet_vehicle_view_kanban_inherit" model="ir.ui.view">
         <field name="name">gpsmap.fleet.vehicle.kanban_inherit</field>
         <field name="model">fleet.vehicle</field>
