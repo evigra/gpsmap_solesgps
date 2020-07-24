@@ -10,3 +10,7 @@ class geofence(models.Model):
     _inherit = "gpsmap.geofence"
     
 
+class vehicle(models.Model):
+    _inherit = "fleet.vehicle"
+    recargado                                  = fields.Datetime('Recargado')
+
