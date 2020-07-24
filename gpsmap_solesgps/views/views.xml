@@ -2,19 +2,19 @@
 <odoo>
 
     <!-- GEOFENCE -->
-<!--
+
     <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.geofence.form_inherit</field>
         <field name="model">gpsmap.geofence</field>
         <field name="inherit_id" ref="gpsmap.gpsmap_geofence_view_form"/>
         <field name="arch" type="xml">               
-            <xpath expr="//group/field[@name='points']" position="before">            
+            <xpath expr="//header/button[@id='action_clearpoint']" position="before">            
                 <field name="company_id" groups="base.group_multi_company"/>                    
             </xpath>                
         </field>
     </record>        
     
-
+<!--
     <record id="gpsmap_fleet_vehicle_view_kanban_inherit" model="ir.ui.view">
         <field name="name">gpsmap.fleet.vehicle.kanban_inherit</field>
         <field name="model">fleet.vehicle</field>
