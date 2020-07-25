@@ -21,9 +21,7 @@
         <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//group/field[@name='phone']" position="after">            
-                <group col="4" string="GPS Configuration">
-                    <field name="phone"  groups="gpsmap.gpsmap_group_god"/>
-                </group>                
+                <field name="recargado"  groups="gpsmap.gpsmap_group_god"/>
             </xpath>
         </field>
     </record>        
