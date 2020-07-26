@@ -14,8 +14,11 @@ class vehicle(models.Model):
     _inherit = "fleet.vehicle"
     recargado                                   = fields.Datetime('Recargado')
     def run_scheduler_recarga(self):
-        data_position                           = self.js_positions()        
-        for position in data_position:
+        vehicle_args                            =[]        
+        return_positions                        ={}
+        vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
+
+        for vehicle in vehicle_data:
             print("#################")    
-            print(position)
+            print(vehicle)
 
