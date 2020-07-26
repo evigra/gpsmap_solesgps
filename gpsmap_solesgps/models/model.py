@@ -19,6 +19,6 @@ class vehicle(models.Model):
         vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
 
         for vehicle in vehicle_data:
-            print("#################")    
-            print(vehicle)
+            vehicle.devicetime
+            print("#################", vehicle.devicetime)    
 
