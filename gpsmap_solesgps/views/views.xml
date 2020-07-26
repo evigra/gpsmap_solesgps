@@ -13,7 +13,6 @@
             </xpath> 
         </field>
     </record>        
-
     <record id="view_gpsmap_solesgps_vehicle_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.vehicle.form</field>
         <field name="model">fleet.vehicle</field>
