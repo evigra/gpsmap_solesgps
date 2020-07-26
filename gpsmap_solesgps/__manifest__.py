@@ -32,7 +32,7 @@ Main Features
         'taecel',
     ],
     'data': [
-         'data/data.xml',   
+#         'data/data.xml',   
          'security/security.xml',
          'views/views.xml',
     ],
