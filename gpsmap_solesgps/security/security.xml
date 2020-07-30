@@ -1,9 +1,10 @@
 <?xml version="1.0" ?>
 <odoo>
+    <data>        
         <record id="fleet.fleet_group_manager" model="res.groups">
             <field name="users" eval="[(4, ref('base.group_user'))]"/>
         </record>
-
+    <data>
 
 
 
@@ -27,17 +28,12 @@
         </record>
 
 <!--
-
-
         <record id="gpsmap.access_gpsmap_positions_user" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id','=',user.company_id)]</field>
         </record>
-
-
         <record id="gpsmap.access_gpsmap_positions_manager" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id','=',user.company_id)]</field>
-        </record>
-        
+        </record>        
 -->    
         
         
