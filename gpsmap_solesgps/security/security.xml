@@ -1,16 +1,14 @@
 <?xml version="1.0" ?>
 <odoo>
 
-        <record id="fleet.fleet_group_manager" model="res.groups">
-            <field name="users" eval="[(4, ref('fleet.fleet_group_user'))]"/>
-        </record>
 
 
+<!--
         <record id="gpsmap.access_gpsmap_vehicle_user" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>            
         </record>
 
-
+        <delete model="ir.rule" id="fleet.fleet_rule_vehicle_visibility_manager"/>
 
         <record id="fleet.fleet_rule_vehicle_visibility_manager" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>                        
@@ -26,7 +24,7 @@
         <record id="gpsmap.access_gpsmap_geofence_user" model="ir.rule">
             <field name="domain_force">[('company_id','=',user.company_id.id)]</field>
         </record>
-
+-->
 <!--
         <record id="gpsmap.access_gpsmap_positions_user" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id','=',user.company_id)]</field>
