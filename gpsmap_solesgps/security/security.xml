@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <odoo>
 
-
+<!--
         <delete model="ir.rule" id="fleet.fleet_rule_vehicle_visibility_manager"/>
 
         
@@ -11,6 +11,11 @@
             <field name="groups" eval="[(4, ref('fleet.fleet_group_manager'))]"/>
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>
         </record>        
+
+-->
+
+
+
 
 
         
