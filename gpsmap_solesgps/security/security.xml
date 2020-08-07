@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <odoo>
 
-
+<!--
         <delete model="ir.rule" id="fleet.fleet_rule_vehicle_visibility_manager"/>
-
+-->
         
         <record id="gpsmap_rule_vehicle_visibility_manager" model="ir.rule">
             <field name="name">Manager has all rights on vehicle</field>
