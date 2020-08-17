@@ -13,10 +13,6 @@
         </record>        
 
 
-        <record id="access_gpsmap_speed_temporal" model="ir.rule">
-            <field name="domain_force">[('deviceid.company_id','=',user.company_id.id)]</field>
-        </record>        
-
 
 
 
