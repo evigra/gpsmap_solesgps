@@ -5,19 +5,18 @@
         <delete model="ir.rule" id="fleet.fleet_rule_vehicle_visibility_manager"/>
 
         
-        <record id="gpsmap_rule_vehicle_visibility_manager" model="ir.rule">
+        <record id="rule_gpsmap_solesgps_vehicle_visibility_manager" model="ir.rule">
             <field name="name">Manager has all rights on vehicle</field>
             <field name="model_id" ref="model_fleet_vehicle"/>
             <field name="groups" eval="[(4, ref('fleet.fleet_group_manager'))]"/>
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>
         </record>        
 
+        <record id="gpsmap.rule_gpsmap_speed_temporal" model="ir.rule">
+            <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>            
+        </record>
 
 
-
-
-
-        
 
 <!--
         <record id="gpsmap.access_gpsmap_geofence_user" model="ir.rule">
