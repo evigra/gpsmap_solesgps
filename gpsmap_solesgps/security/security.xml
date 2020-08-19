@@ -16,10 +16,7 @@
         </record>
         <record id="gpsmap.rule_gpsmap_geofence_temporal" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>            
-        </record>
-        <record id="gpsmap.rule_gpsmap_vehicle_user" model="ir.rule">
-            <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>
-        </record>
+        </record>        
         <record id="gpsmap.rule_gpsmap_vehicle_manager" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>
         </record>
