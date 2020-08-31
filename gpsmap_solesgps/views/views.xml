@@ -9,7 +9,7 @@
         <field name="inherit_id" ref="gpsmap.gpsmap_geofence_view_form"/>
         <field name="arch" type="xml">               
             <xpath expr="//header/button[@id='action_clearpoint']" position="before">            
-                <field name="company_id" groups="base.group_multi_company"/>                    
+                <field name="company_id" groups="base.group_multi_company"  groups="fleet.fleet_group_manager"/>                    
             </xpath> 
         </field>
     </record>        
@@ -19,7 +19,7 @@
         <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//group/field[@name='temporal_id']" position="after">            
-                <field name="recargado" groups="gpsmap.gpsmap_group_manager"/>                    
+                <field name="recargado" groups="fleet.fleet_group_manager"/>                    
             </xpath>        
         </field>
     </record>        
@@ -41,15 +41,7 @@
             </xpath>                
         </field>
     </record> 
--->    
-    
+-->        
     
 </odoo>
-
-
-
-
-
-
-
 
