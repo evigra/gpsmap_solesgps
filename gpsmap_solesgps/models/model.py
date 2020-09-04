@@ -20,5 +20,5 @@ class vehicle(models.Model):
 
         for vehicle in vehicle_data:
             #vehicle.devicetime
-            print("######## Devicetime #########", vehicle["devicetime"])    
+            print("######## Devicetime #########", vehicle["recargado"])    
 
