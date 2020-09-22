@@ -18,7 +18,7 @@ class vehicle(models.Model):
         return_positions                        ={}
         vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
 
-        #for vehicle in vehicle_data:
+        for vehicle in vehicle_data:
             #vehicle.devicetime
-            #print("######## Devicetime #########", vehicle["devicetime"])    
+            print("######## Devicetime #########", vehicle["devicetime"])    
 
