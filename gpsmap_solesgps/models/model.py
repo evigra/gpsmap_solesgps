@@ -27,7 +27,7 @@ class vehicle(models.Model):
             if(vehicle["recargado"]!=""):        
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
-                #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)
+                ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)
                 
 
                 #vehicle.devicetime
