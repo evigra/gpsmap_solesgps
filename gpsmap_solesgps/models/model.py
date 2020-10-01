@@ -14,11 +14,21 @@ class vehicle(models.Model):
     _inherit = "fleet.vehicle"
     recargado                                   = fields.Datetime('Recargado')
     def run_scheduler_recarga(self):
+        ahora = datetime.datetime.utcnow()
+        ayer = ahora - datetime.timedelta(days=25)
+    
+        print
+    
         vehicle_args                            =[]        
         return_positions                        ={}
         vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
 
         for vehicle in vehicle_data:
+            ahora = datetime.datetime.utcnow()
+            ayer = ahora - datetime.timedelta(days=25)
+            ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)
+            
+
             #vehicle.devicetime
-            print("######## Devicetime #########", vehicle["devicetime"])    
+            print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)    
 
