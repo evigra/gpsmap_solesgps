@@ -24,14 +24,13 @@ class vehicle(models.Model):
         vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
 
         for vehicle in vehicle_data:
-            print("VEHICLE=============",vehicle)
-            if(vehicle["recargado"]!=""):        
+            print("# VEHICLE =============",vehicle["name"])
+            if(!(vehicle["recargado"]=="" AND vehicle["recargado"]==NULL)):        
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
-                #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)
-                
+                #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)                
 
                 #vehicle.devicetime
-                print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
+                print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)        
 
