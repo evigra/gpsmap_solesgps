@@ -14,7 +14,8 @@ class vehicle(models.Model):
     _inherit = "fleet.vehicle"
     #recargado                                   = fields.Datetime('Recargado')
     def run_scheduler_recarga(self):
-
+        taecel_obj                             =self.env['taecel']
+        
         ahora = datetime.datetime.utcnow()
         ayer = ahora - datetime.timedelta(days=25)
     
@@ -23,18 +24,22 @@ class vehicle(models.Model):
         vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
 
         for vehicle in vehicle_data:
+            recargar=0
             print("# VEHICLE =============",vehicle["name"])
-            #if((vehicle["recargado"]=="" OR vehicle["recargado"]==NULL)):        
             if(vehicle["recargado"] not in {"",False}):        
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
-                #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)                
                 
-                #vehicle.devicetime
-                print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
+                #print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 if str(vehicle["recargado"]) < str(ayer):
-                #if( > ayer):
-                    print("# POSIBLE RECARGA POR FECHA")
-                #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)        
+                    recargar=1
             else:
+                recargar=1
+                                
+            if(recargar==1):
                 print("# POSIBLE RECARGA NUEVA")
+                taecel_data                     ={}
+                taecel_data["name"]             ="TEL030"
+                taecel_data["referencia"]       =vehicle["phone"]
+
+                taecel_obj.create(speed)                                               
