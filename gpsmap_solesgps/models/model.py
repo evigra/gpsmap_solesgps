@@ -25,7 +25,7 @@ class vehicle(models.Model):
         for vehicle in vehicle_data:
             print("# VEHICLE =============",vehicle["name"])
             #if((vehicle["recargado"]=="" OR vehicle["recargado"]==NULL)):        
-            if(vehicle["recargado"] not in {"",Null,False}):        
+            if(vehicle["recargado"] not in {"",False}):        
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
                 #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)                
