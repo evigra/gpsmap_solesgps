@@ -12,9 +12,8 @@ class geofence(models.Model):
 
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
-    recargado                                   = fields.Datetime('Recargado')
+    #recargado                                   = fields.Datetime('Recargado')
     def run_scheduler_recarga(self):
-
 
         ahora = datetime.datetime.utcnow()
         ayer = ahora - datetime.timedelta(days=25)
