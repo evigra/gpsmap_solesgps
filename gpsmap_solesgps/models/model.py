@@ -29,8 +29,11 @@ class vehicle(models.Model):
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
                 #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)                
-
+                
                 #vehicle.devicetime
                 print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
+                if(vehicle["recargado"]>ayer):
+                    print("# POSIBLE RECARGA POR FECHA")
                 #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)        
-
+            else
+                print("# POSIBLE RECARGA NUEVA")
