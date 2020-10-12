@@ -16,8 +16,6 @@ class vehicle(models.Model):
     def run_scheduler_recarga(self):
 
 
-
-
         ahora = datetime.datetime.utcnow()
         ayer = ahora - datetime.timedelta(days=25)
     
@@ -29,11 +27,11 @@ class vehicle(models.Model):
             print("FECHA RECARGADO=",vehicle["recargado"])
             if(vehicle["recargado"]!=""):        
                 ahora = datetime.datetime.utcnow()
-                #ayer = ahora - datetime.timedelta(days=25)
+                ayer = ahora - datetime.timedelta(days=25)
                 #ayer2 = vehicle["recargado"] - datetime.timedelta(days=25)
                 
 
                 #vehicle.devicetime
-                #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)
+                print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)        
 
