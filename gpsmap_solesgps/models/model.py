@@ -36,5 +36,5 @@ class vehicle(models.Model):
                 #if( > ayer):
                     print("# POSIBLE RECARGA POR FECHA")
                 #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)        
-            else
+            else:
                 print("# POSIBLE RECARGA NUEVA")
