@@ -24,7 +24,7 @@ class vehicle(models.Model):
         vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
 
         for vehicle in vehicle_data:
-            print("FECHA RECARGADO=",vehicle["recargado"])
+            print("VEHICLE=============",vehicle)
             if(vehicle["recargado"]!=""):        
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
