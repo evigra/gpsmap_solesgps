@@ -32,7 +32,8 @@ class vehicle(models.Model):
                 
                 #vehicle.devicetime
                 print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
-                if(vehicle["recargado"]>ayer):
+                if str(vehicle["recargado"]) < str(ayer):
+                #if( > ayer):
                     print("# POSIBLE RECARGA POR FECHA")
                 #print("######## RECARGADO = ", vehicle["recargado"], " ayer=",ayer , " ayer2=",ayer2)        
             else
