@@ -21,7 +21,7 @@ class vehicle(models.Model):
         
         ahora = datetime.datetime.utcnow()
         ayer = ahora - datetime.timedelta(days=25)
-        antes = ahora - datetime.timedelta(minutes=30)
+        antes = ahora - datetime.timedelta(minutes=20)
     
         vehicle_args                            =[]        
         return_positions                        ={}
@@ -29,26 +29,22 @@ class vehicle(models.Model):
 
         for vehicle in vehicle_data:
             recargar=0
-            print("# VEHICLE =============",vehicle["name"])
+            print("# VEHICLE ========================",vehicle["name"])
             if(vehicle["recargado"] not in {"",False}):        
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
                 
-                print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 if str(vehicle["recargado"]) < str(ayer):
-                    print("# DEVICE = ", vehicle["devicetime_compu"], " antes=",antes)
                     if str(vehicle["devicetime_compu"]) < str(antes):                 
-                        print("# DEVICE recarga = ", vehicle["devicetime_compu"], " antes=",antes)       
+                        print("## RECARGADO= ",vehicle["recargado"],"   ## Dev Activo = ",vehicle["devicetime_compu"],"   ## Antes=",antes)       
                         recargar=1
-                    else:    
-                        print("# DEVICE activo= ", vehicle["devicetime_compu"], " antes=",antes)
             else:
                 recargar=2
                                 
             if(recargar>0 and vehicle["phone"] not in {"",False}):
                 print("# POSIBLE RECARGA NUEVA=", recargar)
                 taecel_data                     ={}
-                taecel_data["name"]              ="TEL030"
+                taecel_data["name"]             ="TEL030"
                 taecel_data["referencia"]       =vehicle["phone"]
 
-                print("############ TAECEL =", taecel_obj.create(taecel_data)   )
+                print("# TAECEL =", taecel_obj.create(taecel_data) ) 
