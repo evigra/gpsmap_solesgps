@@ -45,4 +45,4 @@ class vehicle(models.Model):
                 taecel_data["name"]             ="TEL030"
                 taecel_data["referencia"]       =vehicle["phone"]
 
-                taecel_obj.create(speed)                                               
+                taecel_obj.create(taecel_data)                                               
