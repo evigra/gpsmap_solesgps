@@ -29,14 +29,16 @@ class vehicle(models.Model):
 
         for vehicle in vehicle_data:
             recargar=0
+            ahora = datetime.datetime.utcnow()
+            
             print("# VEHICLE ========================",vehicle["name"])
             if(vehicle["recargado"] not in {"",False}):        
-                ahora = datetime.datetime.utcnow()
+                
                 ayer = ahora - datetime.timedelta(days=25)
                 
                 if str(vehicle["recargado"]) < str(ayer):
                     if str(vehicle["devicetime_compu"]) < str(antes):                 
-                        print("## RECARGADO= ",vehicle["recargado"],"   ## Dev Activo = ",vehicle["devicetime_compu"],"   ## Antes=",antes)       
+                        #print("## RECARGADO= ",vehicle["recargado"],"   ## Dev Activo = ",vehicle["devicetime_compu"],"   ## Antes=",antes)       
                         recargar=1
             else:
                 recargar=2
@@ -47,4 +49,12 @@ class vehicle(models.Model):
                 taecel_data["name"]             ="TEL030"
                 taecel_data["referencia"]       =vehicle["phone"]
 
-                print("# TAECEL =", taecel_obj.create(taecel_data) ) 
+                taecel_new                      =taecel_obj.create(taecel_data)
+                                
+                if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
+                    vehicle["recargado"]=ahora
+                    print(taecel_new["mensaje2"])
+                    self.write(vehicle)
+                
+                
+                
