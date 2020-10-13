@@ -44,7 +44,7 @@ class vehicle(models.Model):
 
                 taecel_new                      =taecel_obj.create(taecel_data)
                 
-                if(data_taecel["transID"]!=""):                    
+                if(taecel_new["transID"]!=""):                    
                 #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
                     #vehicle["recargado"]=ahora
                     print("transID==", taecel_new["transID"])
