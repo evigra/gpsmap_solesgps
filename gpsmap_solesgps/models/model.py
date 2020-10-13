@@ -21,6 +21,7 @@ class vehicle(models.Model):
         
         ahora = datetime.datetime.utcnow()
         ayer = ahora - datetime.timedelta(days=25)
+        antes = ahora - datetime.timedelta(minutes=30)
     
         vehicle_args                            =[]        
         return_positions                        ={}
@@ -35,8 +36,12 @@ class vehicle(models.Model):
                 
                 print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 if str(vehicle["recargado"]) < str(ayer):
-                    print("# DEVICE = ", vehicle["devicetime_compu"], " ahora=",ahora)
-                    recargar=1
+                    print("# DEVICE = ", vehicle["devicetime_compu"], " antes=",antes)
+                    if str(vehicle["devicetime_compu"]) < str(antes):                 
+                        print("# DEVICE recarga = ", vehicle["devicetime_compu"], " antes=",antes)       
+                        recargar=1
+                    else:    
+                        print("# DEVICE activo= ", vehicle["devicetime_compu"], " antes=",antes)
             else:
                 recargar=2
                                 
