@@ -43,9 +43,10 @@ class vehicle(models.Model):
                 taecel_data["referencia"]       =vehicle["phone"]
 
                 taecel_new                      =taecel_obj.create(taecel_data)
-                                
-                if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
-                    vehicle["recargado"]=ahora
-                    print(taecel_new["mensaje2"])
-                    self.write(vehicle)
+                
+                if(data_taecel["transID"]!=""):                    
+                #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
+                    #vehicle["recargado"]=ahora
+                    print("transID==", taecel_new["transID"])
+                    #self.write(vehicle)
                                 
