@@ -39,7 +39,7 @@ class vehicle(models.Model):
             else:
                 recargar=2
                                 
-            if(recargar>0):
+            if(recargar>0 AND vehicle["phone"]!=False):
                 print("# POSIBLE RECARGA NUEVA=", recargar)
                 taecel_data                     ={}
                 taecel_data["name"]             ="TEL030"
