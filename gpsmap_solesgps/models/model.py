@@ -35,14 +35,15 @@ class vehicle(models.Model):
                 
                 print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 if str(vehicle["recargado"]) < str(ayer):
+                    print("# DEVICE = ", vehicle["devicetime_compu"], " ahora=",ahora)
                     recargar=1
             else:
                 recargar=2
                                 
-            if(recargar>0 and vehicle["phone"]!=False):
+            if(recargar>0 and vehicle["phone"] not in {"",False}):
                 print("# POSIBLE RECARGA NUEVA=", recargar)
                 taecel_data                     ={}
-                taecel_data["name"]             ="TEL030"
+                taecel_data["name"]              ="TEL030"
                 taecel_data["referencia"]       =vehicle["phone"]
 
                 print("############ TAECEL =", taecel_obj.create(taecel_data)   )
