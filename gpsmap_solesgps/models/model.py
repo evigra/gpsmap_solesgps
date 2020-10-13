@@ -33,14 +33,14 @@ class vehicle(models.Model):
                 ahora = datetime.datetime.utcnow()
                 ayer = ahora - datetime.timedelta(days=25)
                 
-                #print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
+                print("# RECARGADO = ", vehicle["recargado"], " ayer=",ayer)
                 if str(vehicle["recargado"]) < str(ayer):
                     recargar=1
             else:
-                recargar=1
+                recargar=2
                                 
-            if(recargar==1):
-                print("# POSIBLE RECARGA NUEVA")
+            if(recargar>0):
+                print("# POSIBLE RECARGA NUEVA=", recargar)
                 taecel_data                     ={}
                 taecel_data["name"]             ="TEL030"
                 taecel_data["referencia"]       =vehicle["phone"]
