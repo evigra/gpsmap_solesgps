@@ -25,8 +25,8 @@ class vehicle(models.Model):
     
         vehicle_args                            =[]        
         return_positions                        ={}
-        #vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
-        vehicle_data                            =self.search(vehicle_args, offset=0, limit=1, order=None)
+        vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
+        #vehicle_data                            =self.search(vehicle_args, offset=0, limit=1, order=None)
 
         for vehicle in vehicle_data:
             recargar=0
