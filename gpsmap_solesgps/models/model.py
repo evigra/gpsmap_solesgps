@@ -25,7 +25,8 @@ class vehicle(models.Model):
     
         vehicle_args                            =[]        
         return_positions                        ={}
-        vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
+        #vehicle_data                            =self.search(vehicle_args, offset=0, limit=None, order=None)
+        vehicle_data                            =self.search(vehicle_args, offset=0, limit=1, order=None)
 
         for vehicle in vehicle_data:
             recargar=0
@@ -47,9 +48,11 @@ class vehicle(models.Model):
                 taecel_new                      =taecel_obj.create(taecel_data)
                 
                                 
-                if(taecel_new["transID"]!=""):                    
+                if(taecel_new["transID"]!=""):       
+                             
                 #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
-                    vehicle["recargado"]=ahora
+                    hoy_fecha    ="%s" %(datetime.datetime.now())
+                    vehicle["recargado"]=hoy_fecha[0:19]                
                     print("transID==", taecel_new["transID"])
                     #self.write(vehicle)
                                 
