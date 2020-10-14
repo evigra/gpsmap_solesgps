@@ -31,8 +31,10 @@ class vehicle(models.Model):
             recargar=0
             
             print("# VEHICLE ========================",vehicle["name"])
-            if(vehicle["recargado"] not in {"",False} and str(vehicle["recargado"]) < str(ayer)  and str(vehicle["devicetime_compu"]) < str(antes)):        
-                recargar=1
+            if(vehicle["recargado"] not in {"",False}): 
+                if(str(vehicle["recargado"]) < str(ayer)):  
+                    if(str(vehicle["devicetime_compu"]) < str(antes)):        
+                        recargar=1
             else:
                 recargar=2
                                 
@@ -50,5 +52,5 @@ class vehicle(models.Model):
                 #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
                     vehicle["recargado"]=ahora
                     print("transID==", taecel_new["transID"])
-                    self.write(vehicle)
+                    #self.write(vehicle)
                                 
