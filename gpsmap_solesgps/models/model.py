@@ -48,12 +48,12 @@ class vehicle(models.Model):
                 taecel_new                      =taecel_obj.create(taecel_data)
                 
                 if("Status" in taecel_new):                
-                if(taecel_new["transID"]!=""):       
+                    if(taecel_new["transID"]!=""):       
                              
-                if("mensaje2" in taecel_new and taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):              
-                #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
-                    hoy_fecha    ="%s" %(datetime.datetime.now())
-                    vehicle["recargado"]=hoy_fecha[0:19]                
-                    print("mensaje2==", taecel_new["mensaje2"])
-                    self.write(vehicle)
-                                
+                        if("mensaje2" in taecel_new and taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):              
+                        #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
+                            hoy_fecha    ="%s" %(datetime.datetime.now())
+                            vehicle["recargado"]=hoy_fecha[0:19]                
+                            print("mensaje2==", taecel_new["mensaje2"])
+                            self.write(vehicle)
+                                        
