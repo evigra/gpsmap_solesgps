@@ -49,7 +49,7 @@ class vehicle(models.Model):
                 
                 print("# taecel_new=", taecel_new)
                 
-                if("Status" in taecel_new):                
+                if(taecel_new==None):                
                     if(taecel_new["transID"]!=""):                                    
                         if("mensaje2" in taecel_new and taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):              
                         #if(taecel_new["mensaje2"]=="Recarga Exitosa" and taecel_new["status"]=="Exitosa"):
