@@ -47,7 +47,7 @@ class vehicle(models.Model):
 
                 taecel_new                      =taecel_obj.create(taecel_data)
                 
-
+                print("# taecel_new=", taecel_new)
                 
                 if("Status" in taecel_new):                
                     if(taecel_new["transID"]!=""):                                    
