@@ -4,11 +4,12 @@
             <field name="domain_force">[('temporal_id','=',user.partner_id.id),('company_id.id','=',user.company_id.id)]</field>
         </record>
         <record id="gpsmap.rule_fleet_vehicle_admin" model="ir.rule">
-            <!--
             <field name="domain_force">[('company_id.id','in',user.company_ids.ids)]</field>
-            -->
-            <field name="domain_force">['|','&amp;',(1,'in',user.company_ids.ids),('company_id.id','=',user.company_id.id),('company_id.id','in',user.company_ids.ids)]</field>
         </record>        
+        <record id="gpsmap.rule_fleet_vehicle_admin2" model="ir.rule">
+            <field name="domain_force">[('company_id.id','in',user.company_id.id)]</field>
+        </record>        
+
         <record id="gpsmap.rule_gpsmap_speed_template" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>            
         </record>
