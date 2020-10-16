@@ -3,6 +3,7 @@
 import datetime
 import requests
 import random
+
 from dateutil.relativedelta import relativedelta
 from odoo import api, fields, models, _
 class taecel(models.Model):
