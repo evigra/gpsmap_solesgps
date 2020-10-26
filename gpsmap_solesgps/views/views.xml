@@ -10,11 +10,22 @@
         <field name="arch" type="xml">               
             <xpath expr="//header/button[@id='action_clearpoint']" position="before">            
                 <field name="company_id" groups="base.group_multi_company"/>                    
-                <field name="company_ids" widget="many2many_tags"/>
-                
+                <field name="company_ids" widget="many2many_tags"/>                
             </xpath> 
         </field>
     </record>        
+
+    <record id="gpsmap_geofence_device_view_form_inherit" model="ir.ui.view">
+        <field name="name">gpsmap.geofence_device.form_inherit</field>
+        <field name="model">gpsmap.geofence_device</field>
+        <field name="inherit_id" ref="gpsmap.gpsmap_geofence_device_view_form"/>
+        <field name="arch" type="xml">               
+            <xpath expr="//group/field[@name='description']" position="before">            
+                <field name="company_ids" widget="many2many_tags"/>                
+            </xpath> 
+        </field>
+    </record>  
+
     <record id="view_gpsmap_solesgps_vehicle_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.vehicle.form</field>
         <field name="model">fleet.vehicle</field>
