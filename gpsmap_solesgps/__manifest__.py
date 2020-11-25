@@ -28,8 +28,6 @@ Main Features
 """,
     'depends': [
         'gpsmap',
-        'sale_management',
-        'taecel',
     ],
     'data': [
         'data/data.xml',

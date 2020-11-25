@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <odoo>
+
         <record id="gpsmap.rule_fleet_vehicle_template" model="ir.rule">
             <field name="domain_force">[('temporal_id','=',user.partner_id.id),('company_id.id','=',user.company_id.id)]</field>
         </record>
@@ -15,7 +16,9 @@
         <record id="gpsmap.rule_gpsmap_geofence_device_temporal" model="ir.rule">
             <field name="domain_force">[('company_ids','in',user.company_id.id)]</field>            
         </record>
+        <!--
         <record id="gpsmap.rule_gpsmap_positions_temporal" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id.id','in',user.company_ids.ids)]</field>            
         </record>          
+        -->
 </odoo>
