@@ -27,10 +27,12 @@
         <record id="gpsmap.rule_fleet_vehicle_log_fuel" model="ir.rule">
             <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
         </record>
-
         <record id="gpsmap.rule_fleet_vehicle_log_services" model="ir.rule">
             <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
         </record>
-
+            
+        <record id="gpsmap.rule_fleet_vehicle_log_services" model="ir.rule">
+            <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
+        </record>
 
 </odoo>
