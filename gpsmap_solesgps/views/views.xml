@@ -39,6 +39,21 @@
             </xpath> 
         </field>
     </record>  
+
+    <record id="gpsmap_route_view_form_inherit" model="ir.ui.view">
+        <field name="name">gpsmap.route.form_inherit</field>
+        <field name="model">gpsmap.route</field>
+        <field name="inherit_id" ref="gpsmap.gpsmap_route_view_form"/>
+        <field name="arch" type="xml">               
+            <xpath expr="//header/button[@id='action_clearpoint']" position="before">            
+                <!--
+                <field name="company_id" groups="base.group_multi_company"/>                    
+                -->
+                <field name="company_ids" widget="many2many_tags"/>                
+            </xpath> 
+        </field>
+    </record>        
+
 <!--
     <record id="view_gpsmap_solesgps_vehicle_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.vehicle.form</field>
@@ -72,11 +87,3 @@
     
     
 </odoo>
-
-
-
-
-
-
-
-
