@@ -8,10 +8,6 @@ from odoo import api, fields, models, _
 """
 class taecel(models.Model):
     _inherit = "taecel"
-
-class res_company(models.Model):
-    _inherit = "res.company"
-    disabled                                    = fields.Boolean('Disable', default=False)
 """
 
 class geofence(models.Model):
