@@ -13,20 +13,6 @@
     </record>
 
 
-    <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
-        <field name="name">gpsmap.geofence.form_inherit</field>
-        <field name="model">res.company</field>
-        <field name="inherit_id" ref="	base.view_company_form"/>
-        <field name="arch" type="xml">               
-            <xpath expr="//field[@name='model_id']" position="before">                        
-                <field name="company_ids"/>                
-            </xpath> 
-        </field>
-    </record>        
-
-
-
-
     <!-- GEOFENCE -->
 
     <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
