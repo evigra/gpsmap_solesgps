@@ -13,7 +13,6 @@ class taecel(models.Model):
 class res_company(models.Model):
     _inherit = "res.company"
     
-    disabled                                    = fields.Boolean('Disable', default=False)
 
 
 class geofence(models.Model):
