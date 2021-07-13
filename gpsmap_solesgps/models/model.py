@@ -10,11 +10,6 @@ class taecel(models.Model):
     _inherit = "taecel"
 """
 
-class res_company(models.Model):
-    _inherit = "res.company"
-    
-
-
 class geofence(models.Model):
     _inherit = "gpsmap.geofence"
     
@@ -22,4 +17,7 @@ class geofence(models.Model):
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
     #recargado                                   = fields.Datetime('Recargado')
+
+class tc_devices(models.Model):
+    _inherit = "gpsmap.tc_devices"
                                         
