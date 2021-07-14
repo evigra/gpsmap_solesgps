@@ -7,7 +7,7 @@
             <field name="implied_ids" eval="[(4, ref('gpsmap.gpsmap_group_admin'))]"/>
         </record>
         <record id="fleet.fleet_group_manager" model="res.groups">
-            <field name="implied_ids" eval="[(4, ref('gpsmap_solesgps.gpsmapsolesgps_group_admin2'))]"/>
+            <field name="implied_ids" eval="[(4, ref('gpsmapsolesgps_group_admin2'))]"/>
         </record>
 
         <record id="rule_fleet_vehicle_admin2" model="ir.rule">
@@ -21,9 +21,18 @@
             <field name="perm_unlink" eval="True"/>            
         </record>        
 
-
-
-
+<!--
+        <record id="rule_tc_devices_admin2" model="ir.rule">
+            <field name="name">Admin has all rights on vehicle</field>
+            <field name="model_id" ref="gpsmap.model_tc_devices"/>
+            <field name="groups" eval="[(4, ref('gpsmapsolesgps_group_admin2'))]"/>
+            <field name="domain_force">[('company_ids.id','in',user.company_ids.ids)]</field>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>            
+        </record>        
+-->
         <record id="gpsmap.rule_fleet_vehicle_template" model="ir.rule">
             <field name="domain_force">[('temporal_id','=',user.partner_id.id),('company_id.id','=',user.company_id.id)]</field>
             <field name="domain_force">[('temporal_id','=',user.partner_id.id)]</field>
@@ -31,11 +40,12 @@
         <record id="gpsmap.rule_fleet_vehicle_admin" model="ir.rule">
             <field name="domain_force">[('company_id.id','=',user.company_id.id)]</field>
         </record>        
-<!--
-        <record id="gpsmap.rule_fleet_vehicle_admin2" model="ir.rule">
+
+        <!--
+        <record id="rule_fleet_vehicle_admin2" model="ir.rule">
             <field name="domain_force">[('company_id.id','in',user.company_ids.ids)]</field>
         </record>        
--->
+        -->
         <record id="gpsmap.rule_gpsmap_speed_template" model="ir.rule">
             <field name="domain_force">[('deviceid.company_id.id','=',user.company_id.id)]</field>            
         </record>
@@ -46,11 +56,9 @@
             <field name="domain_force">[('company_ids','in',user.company_id.id)]</field>            
         </record>
 
-
         <record id="gpsmap.rule_gpsmap_geofence_device_temporal" model="ir.rule">
             <field name="domain_force">[('company_ids','in',user.company_id.id)]</field>            
-        </record>
-        
+        </record>        
 
         <record id="gpsmap.rule_fleet_vehicle_log_fuel" model="ir.rule">
             <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
