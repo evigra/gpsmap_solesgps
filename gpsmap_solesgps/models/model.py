@@ -17,7 +17,4 @@ class geofence(models.Model):
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
     #recargado                                   = fields.Datetime('Recargado')
-
-class tc_devices(models.Model):
-    _inherit = "gpsmap.tc_devices"
                                         
