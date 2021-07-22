@@ -4,6 +4,7 @@
     <data noupdate="1">
     </data>        
 
+    <!--
         <record forcecreate="True" id="ir_cron_fleet_recarga" model="ir.cron">
             <field name="name">GPSMap: Taecel Recarga</field>
             <field name="model_id" ref="model_fleet_vehicle"/>
@@ -16,6 +17,6 @@
             <field eval="False" name="doall" />
             <field name="active" eval="True"/>
         </record>
-
+-->
 
 </odoo>
