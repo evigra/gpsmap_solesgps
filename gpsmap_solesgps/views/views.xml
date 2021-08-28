@@ -12,7 +12,6 @@
         </field>
     </record>
 
-<!--
     <record id="gpsmapsoles_tc_devices_view_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap_soles.tc_devices.form_inherit</field>
         <field name="model">tc_devices</field>
@@ -23,7 +22,6 @@
             </xpath> 
         </field>
     </record>        
-    -->
     <!-- GEOFENCE -->
 
     <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
