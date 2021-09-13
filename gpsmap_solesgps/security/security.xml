@@ -72,6 +72,10 @@
             <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
         </record>
 
+        <record id="gpsmap.rule_tc_device_template" model="ir.rule">
+            <field name="domain_force">[('company_ids.id','=',user.company_id.id)]</field>
+        </record>
+
 
         <record id="gpsmap.rule_fleet_vehicle_odometer" model="ir.rule">
             <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
