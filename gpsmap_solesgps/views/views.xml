@@ -26,8 +26,8 @@
 
     <record id="gpsmap_geofence_view_form_inherit" model="ir.ui.view">
         <field name="name">gpsmap.geofence.form_inherit</field>
-        <field name="model">gpsmap.geofence</field>
-        <field name="inherit_id" ref="gpsmap.gpsmap_geofence_view_form"/>
+        <field name="model">tc_geofences</field>
+        <field name="inherit_id" ref="gpsmap.gpsmap_tc_geofences_view_form"/>
         <field name="arch" type="xml">               
             <xpath expr="//header/button[@id='action_clearpoint']" position="before">            
                 <field name="company_ids" widget="many2many_tags"/>                
@@ -73,21 +73,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    <template id="homepage_inherit_solesgps_display" inherit_id="website.homepage" name="Homepage_solesgps" active="True" customize_show="True">
        <data inherit_id="website.homepage">
            <xpath expr="//div[@id='wrap']" position="replace">
@@ -97,7 +82,7 @@
                     <div class="oe_structure">
                         <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg mt0" data-scroll-background-ratio="1.6">
                             <div class="oe_structure">
-                                <div id="myCarousel1633236416869" class="carousel quotecarousel slide mb128" data-interval="10000" style="height: 400px; overflow: hidden;">
+                                <div id="myCarousel1633236416869" class="carousel quotecarousel slide mb128" data-interval="5000" style="height: 400px; overflow: hidden;">
                                     <ol class="carousel-indicators mb0">
                                         <li data-target="#myCarousel1633236416869" data-slide-to="0" class="active"/>
                                         <li data-target="#myCarousel1633236416869" data-slide-to="1"/>
@@ -115,62 +100,53 @@
                 </section>
 
 
-              <section class="s_feature_grid">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-5 col-md-offset-1">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <span style="min-width: 45px" class="pull-left mb16 fa fa-road fa-2x" data-original-title="" title=""/>
-                          <h4 class="mb0 mt0">Geolocaliza activos<br/></h4>
-                          <p>Rastrea tus activos que se actualizan cada minuto<br/></p>
+                <section class="s_feature_grid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span style="min-width: 45px" class="pull-left mb16 fa fa-road fa-2x" data-original-title="" title=""/>
+                                        <h4 class="mb0 mt0">Geolocaliza activos<br/></h4>
+                                        <p>Rastrea tus activos que se actualizan cada minuto<br/></p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span style="min-width: 45px" class="pull-left mb16 fa fa-key fa-2x" data-original-title="" title=""/>
+                                        <h4 class="mt0 mb0">Paro de motor<br/></h4>
+                                        <p>Realiza el paro de motor, cualquier dia, a cualquier hora<br/></p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span style="min-width: 45px" class="pull-left mb16 fa fa-edit fa-2x" data-original-title="" title=""/>
+                                        <h4 class="mb0 mt0">Zonas de interes<br/></h4>
+                                        <p>Define tus zonas de importancia y clasificalas por color </p>
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span style="min-width: 45px" class="pull-left mb16 fa fa-bullhorn fa-2x"/>
+                                        <h4 class="mt0 mb0">Alertas</h4>
+                                        <p>Recibe alertas por exceso de velocidad, geocercas, etc.<br/></p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span style="min-width: 45px" class="pull-left mb16 fa fa-list-alt fa-2x"/>
+                                        <h4 class="mt0 mb0">Reportes</h4>
+                                        <p>Decide correctamente con los reportes que necesitas.</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <span style="min-width: 45px" class="pull-left mb16 fa fa-wrench fa-2x" data-original-title="" title=""/>
+                                        <h4 class="mt0 mb0">Mantenimientos</h4>
+                                        <p>Registra los servicios realizados a tus vehiculos<br/></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-12">
-                          <span style="min-width: 45px" class="pull-left mb16 fa fa-key fa-2x" data-original-title="" title=""/>
-                          <h4 class="mt0 mb0">Paro de motor<br/></h4>
-                          <p>Realiza el paro de motor, cualquier dia, a cualquier hora<br/></p>
-                        </div>
-                        <div class="col-md-12">
-                          <span style="min-width: 45px" class="pull-left mb16 fa fa-edit fa-2x" data-original-title="" title=""/>
-                          <h4 class="mb0 mt0">Zonas de interes<br/></h4>
-                          <p>Define tus zonas de importancia y clasificalas por color </p>
-                          <br/>
-                        </div>
-                      </div>
                     </div>
-                    <div class="col-md-5">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <span style="min-width: 45px" class="pull-left mb16 fa fa-bullhorn fa-2x"/>
-                          <h4 class="mt0 mb0">Alertas</h4>
-                          <p>Recibe alertas por exceso de velocidad, geocercas, etc.<br/></p>
-                        </div>
-                        <div class="col-md-12">
-                          <span style="min-width: 45px" class="pull-left mb16 fa fa-list-alt fa-2x"/>
-                          <h4 class="mt0 mb0">Reportes</h4>
-                          <p>Decide correctamente con los reportes que necesitas.</p>
-                        </div>
-                        <div class="col-md-12">
-                          <span style="min-width: 45px" class="pull-left mb16 fa fa-wrench fa-2x" data-original-title="" title=""/>
-                          <h4 class="mt0 mb0">Mantenimientos</h4>
-                          <p>Registra los servicios realizados a tus vehiculos<br/></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+                </section>
 
-
-
-
-
-
-
-
-
-
-
+\
 
 
 
