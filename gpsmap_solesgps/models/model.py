@@ -4,11 +4,18 @@ import datetime
 import requests
 import random
 from dateutil.relativedelta import relativedelta
-from odoo import api, fields, models, _
-"""
-class taecel(models.Model):
-    _inherit = "taecel"
-"""
+from odoo import http, api, fields, models, _
+from odoo.http import request
+from odoo.addons.portal.controllers.web import Home
+
+
+
+class WebsiteSort(Home):
+   @http.route()
+   def index(self, **kw):
+       super(WebsiteSort, self).index()
+       return request.render('website.homepage', {})
+
 
 class geofence(models.Model):
     _inherit = "gpsmap.geofence"
@@ -16,8 +23,5 @@ class geofence(models.Model):
 
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
-    #recargado                                   = fields.Datetime('Recargado')
 
-#class tc_devices(models.Model):
-#    _inherit = "gpsmap.tc_devices"
-                                        
+
