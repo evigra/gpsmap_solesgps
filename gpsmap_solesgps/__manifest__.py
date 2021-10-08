@@ -27,7 +27,7 @@ Main Features
 * Analysis graph for costs
 """,
     'depends': [
-        'gpsmap',
+        'gpsmap',        
     ],
     'data': [
         'data/data.xml',

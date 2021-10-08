@@ -73,23 +73,25 @@
 
 
 
-   <template id="homepage_inherit_solesgps_display" inherit_id="website.homepage" name="Homepage_solesgps" active="True" customize_show="True">
-       <data inherit_id="website.homepage">
-           <xpath expr="//div[@id='wrap']" position="replace">
+    <template id="homepage_inherit_solesgps_display" inherit_id="website.homepage" name="Homepage_solesgps" active="True" customize_show="True">
+        <data inherit_id="website.homepage">
 
 
+            <xpath expr="//div[@id='wrap']" position="replace">
                 <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg" data-scroll-background-ratio="1.6">
+                    <span class="s_parallax_bg oe_custom_bg" style="top: -99.52px; bottom: -99.52px; transform: translateY(9px);"/>
                     <div class="oe_structure">
-                        <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg mt0" data-scroll-background-ratio="1.6">
+                        <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg mt0 mb0" data-scroll-background-ratio="1.6" style="background-image: none;">
+                            <span class="s_parallax_bg oe_custom_bg" style="top: -99.52px; bottom: -99.52px; transform: translateY(7px);"/>
                             <div class="oe_structure">
-                                <div id="myCarousel1633236416869" class="carousel quotecarousel slide mb128" data-interval="5000" style="height: 400px; overflow: hidden;">
+                                <div id="myCarousel1633236416869" class="carousel quotecarousel slide mt0 mb32" data-interval="5000" style="height: 400px; overflow: hidden;">
                                     <ol class="carousel-indicators mb0">
-                                        <li data-target="#myCarousel1633236416869" data-slide-to="0" class="active"/>
-                                        <li data-target="#myCarousel1633236416869" data-slide-to="1"/>
-                                        <li data-target="#myCarousel1633236416869" data-slide-to="2"/>
+                                        <li data-target="#myCarousel1633236416869" data-slide-to="0" class="active"><br/></li>
+                                        <li data-target="#myCarousel1633236416869" data-slide-to="1"><br/></li>
+                                        <li data-target="#myCarousel1633236416869" data-slide-to="2"><br/></li>
                                     </ol>
                                     <div class="carousel-inner">
-                                        <div class="item text_only oe_img_bg oe_custom_bg active" style="background-image: url('gpsmap_solesgps/static/src/img/publicidad odoo 1.png'); background-position: 50% 50%;" />
+                                        <div class="item text_only oe_img_bg oe_custom_bg active" style="background-image: url('gpsmap_solesgps/static/src/img/publicidad odoo 1.png'); background-position: 50% 50%;"/>
                                         <div class="item text_only oe_img_bg oe_custom_bg" style="background-image: url('gpsmap_solesgps/static/src/img/publicidad odoo 2.png'); background-position: 50% 50%;"/>
                                         <div class="item text_only oe_img_bg oe_custom_bg" style="background-image: url('gpsmap_solesgps/static/src/img/publicidad odoo 3.png'); background-position: 50% 50%;"/>
                                     </div>
@@ -98,8 +100,6 @@
                         </section>
                     </div>
                 </section>
-
-
                 <section class="s_feature_grid">
                     <div class="container">
                         <div class="row">
@@ -118,8 +118,7 @@
                                     <div class="col-md-12">
                                         <span style="min-width: 45px" class="pull-left mb16 fa fa-edit fa-2x" data-original-title="" title=""/>
                                         <h4 class="mb0 mt0">Zonas de interes<br/></h4>
-                                        <p>Define tus zonas de importancia y clasificalas por color </p>
-                                        <br/>
+                                        <p>Define tus zonas de importancia y clasificalas por color </p><br/>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +145,13 @@
                     </div>
                 </section>
 
-\
+
+
+
+
+
+
+
 
 
 
