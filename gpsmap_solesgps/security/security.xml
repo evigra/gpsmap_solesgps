@@ -80,4 +80,22 @@
         <record id="gpsmap.rule_fleet_vehicle_odometer" model="ir.rule">
             <field name="domain_force">[('vehicle_id.company_id.id','=',user.company_id.id)]</field>            
         </record> 
+        
+<!--       
+        <record id="rule_res_company_admin2" model="ir.rule">
+            <field name="name">Admin has all rights on vehicle</field>
+            <field name="model_id" ref="model_res_company"/>
+
+            <field name="groups" eval="[(4, ref('gpsmapsolesgps_group_admin2'))]"/>
+
+            <field name="domain_force">[(parther_id,'in',user.company_ids.ids)]</field>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>            
+        </record>        
+-->       
+       
+        
+        
 </odoo>

@@ -28,6 +28,7 @@ Main Features
 """,
     'depends': [
         'gpsmap',        
+        'website_crm',
     ],
     'data': [
         'data/data.xml',

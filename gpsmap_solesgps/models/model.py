@@ -20,8 +20,9 @@ class WebsiteSort(Home):
 class geofence(models.Model):
     _inherit = "gpsmap.geofence"
     
-
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
 
+class company(models.Model):
+    _inherit = "res.company"
 
