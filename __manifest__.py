@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     'name' : 'GPSMap Soles',
-    'price' : '95.0',
+    'price' : '0.0',
     'currency' : 'EUR',
     'images': ['static/description/map_online.png'],    
     'author': "SolesGPS :: Eduardo Vizcaino",
@@ -28,16 +28,18 @@ Main Features
 """,
     'depends': [
         'gpsmap',        
-        'website_crm',
+        #'website_crm',
     ],
     'data': [
-        'data/data.xml',
-         'security/security.xml',
-         'views/views.xml',
+        'data/res_company_data.xml',
+        'data/res_users.xml',
+        'data/gps_devices.xml',
+        'data/fleet_vehicle.xml',
+        
+        'security/security.xml',
+        'views/views.xml',
     ],
 
-#    'demo': ['data/solesgpsmap_demo.xml'],
-#    'qweb': ['static/src/xml/*.xml'],
     'installable': True,
     'application': True,
 }

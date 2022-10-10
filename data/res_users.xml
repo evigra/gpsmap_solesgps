@@ -1,0 +1,131 @@
+<odoo>
+    <data noupdate="1">
+    </data>        
+ 
+    <record id="base.user_admin" model="res.users">
+        <field name="name">Administrator</field>
+        <field name="login">webmaster@solesgps.com</field>
+        <field name="password">admin</field>
+        <field name="company_id" ref="base.main_company" />    
+        <field  name="company_ids" eval="[(6,0,[
+            ref('base.main_company'),
+            ref('company_rogelio'),
+            ref('company_tsandoval'),
+            ref('company_mixteca'),
+            ref('company_uhcam'),
+            ref('company_uhcam_gustavo'),
+            ref('company_uhcam_lucero')
+        ])]"/>
+    </record>
+
+    <record id="user_proguz" model="res.users">
+        <field name="name">Angel Yesenia</field>
+        <field name="login">proveorguzman@outlook.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_proguz" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_proguz')])]"/>
+    </record>
+
+    <record id="user_michoacana" model="res.users">
+        <field name="name">Cremeria la Michoacana</field>
+        <field name="login">cremerialamichoacana15@gmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_michoacana" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_michoacana')])]"/>
+    </record>
+
+    <record id="user_tdiaz" model="res.users">
+        <field name="name">Cesar Daniel Diaz Barba</field>
+        <field name="login">danieldiaz_facturacion@hotmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_tdiaz" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_tdiaz')])]"/>
+    </record>
+
+    <record id="user_uhcam" model="res.users">
+        <field name="name">Gustavo</field>
+        <field name="login">jeremy_1186@hotmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_uhcam_gustavo" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_uhcam'),ref('company_uhcam_gustavo'),ref('company_uhcam_lucero')])]"/>
+    </record>
+
+    <record id="user_uhcam_lucero" model="res.users">
+        <field name="name">L E Lucero</field>
+        <field name="login">lucerocl_0412@live.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_uhcam_lucero" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_uhcam'),ref('company_uhcam_lucero')])]"/>
+    </record>
+
+    <record id="user_uhcam_eugenia" model="res.users">
+        <field name="name">L  E Eugenia</field>
+        <field name="login">eugenia.herrera.aguirre@gmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_uhcam_lucero" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_uhcam_lucero')])]"/>
+    </record>
+
+    <record id="user_rogelio" model="res.users">
+        <field name="name">Taxi Rogelio</field>
+        <field name="login">roboba@gmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_rogelio" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_rogelio')])]"/>
+    </record>
+
+    <record id="user_tsandoval" model="res.users">
+        <field name="name">Sandoval Magallon</field>
+        <field name="login">jsandovalmagallon@gmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_tsandoval" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_tsandoval')])]"/>
+    </record>
+
+    <record id="user_tsamudio" model="res.users">
+        <field name="name">Trans Samudio</field>
+        <field name="login">transportes_samudio@hotmail.com</field>        
+        <field name="password"> </field>
+        <field name="company_id" ref="company_tsamudio" />
+        <field  name="company_ids" eval="[(6,0,[ref('company_tsamudio')])]"/>
+    </record>
+
+
+<!--
+
+
+    <record id="company_mixteca" model="res.company">
+        <field name="name">La Mixteca</field>
+        <field name="company_registry">Oscar Ricardo Vazquez Avila</field>
+        <field name="vat">VAAO831213UI9</field>
+        <field name="phone">52 (314) 120 - 9984</field>
+        <field name="email">lamixtecafacturacion@gmail.com</field>
+        <field name="zip">28876</field>
+        <field name="country_id" ref="base.mx" />
+    </record>
+
+
+    <record id="company_proguz" model="res.company">
+        <field name="name">Proveedora Organica de Guzman</field>
+        <field name="company_registry"></field>
+        <field name="vat"></field>
+        <field name="phone">52 (341) 110 - 0179</field>
+        <field name="email"></field>
+        <field name="zip"></field>
+        <field name="country_id" ref="base.mx" />
+    </record>
+
+
+
+    <record id="company_tbucio" model="res.company">
+        <field name="name">Transportes Bucio</field>
+        <field name="company_registry">Luis Bucio Fernandez</field>
+        <field name="vat">BUFL601221HN4</field>
+        <field name="phone">52 (312) 100 - 3216</field>
+        <field name="email">lbufer@hotmail.com</field>
+        <field name="zip">28984</field>
+        <field name="country_id" ref="base.mx" />
+    </record>
+-->
+
+</odoo>

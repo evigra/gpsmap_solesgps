@@ -15,8 +15,6 @@ class WebsiteSort(Home):
        super(WebsiteSort, self).index()
        return request.render('website.homepage', {})
 
-class geofence(models.Model):
-    _inherit = "gpsmap.geofence"
     
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
@@ -27,4 +25,4 @@ class company(models.Model):
 class vehicle(models.Model):
     _inherit = "fleet.vehicle"
     
-    company_id = fields.Many2one('res.company', string='Company', default=lambda self: self.env.user.company_id, required=True)    
+    company_id = fields.Many2one('res.company', string='Company', default=lambda self: self.env.user.company_id)    

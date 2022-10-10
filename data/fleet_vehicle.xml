@@ -1,0 +1,100 @@
+<odoo>
+
+      <record id="vehicle_tsand_01" model="fleet.vehicle">
+          <field name="license_plate">17-AH-8Z</field>
+          <field name="economic_number">TSAND 01</field>
+          <field name="model_id" ref="fleet.model_astra"/>
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_tsandoval"/>
+          <field name="gps1_id" ref="gps_sandoval01"/>
+      </record>
+
+      <record id="vehicle_uhcam_01" model="fleet.vehicle">
+          <field name="license_plate">17AL6J</field>
+          <field name="economic_number">UHCAM 001</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam_gustavo"/>
+          <field name="gps1_id" ref="gps_uhcam01"/>
+      </record>
+      <record id="vehicle_uhcam_12" model="fleet.vehicle">
+          <field name="license_plate">724EW3</field>
+          <field name="economic_number">UHCAM 012</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam"/>
+          <field name="gps1_id" ref="gps_uhcam12"/>
+      </record>
+
+      <record id="vehicle_uhcam_62" model="fleet.vehicle">
+          <field name="license_plate">710EH7</field>
+          <field name="economic_number">UHCAM 062</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_international"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam"/>
+          <field name="gps1_id" ref="gps_uhcam62"/>
+      </record>
+
+      <record id="vehicle_uhcam_393" model="fleet.vehicle">
+          <field name="license_plate">73AT3M</field>
+          <field name="economic_number">L E 393</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_international"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam_lucero"/>
+          <field name="gps1_id" ref="gps_uhcam393"/>
+      </record>
+
+      <record id="vehicle_uhcam_412" model="fleet.vehicle">
+          <field name="license_plate">59AT1M</field>
+          <field name="economic_number">L E 412</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_international"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam_lucero"/>
+          <field name="gps1_id" ref="gps_uhcam412"/>
+      </record>
+      <record id="vehicle_uhcam_419" model="fleet.vehicle">
+          <field name="license_plate">50AT6L</field>
+          <field name="economic_number">L E 419</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam_lucero"/>
+          <field name="gps1_id" ref="gps_uhcam419"/>
+      </record>
+
+      <record id="vehicle_misteca02" model="fleet.vehicle">
+          <field name="license_plate">717AF9</field>
+          <field name="economic_number">MIX 02</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_mixteca"/>
+          <field name="gps1_id" ref="gps_mixteca02"/>
+      </record>
+
+
+      <record id="vehicle_rogelio" model="fleet.vehicle">
+          <field name="license_plate">298-DVB</field>
+          <field name="economic_number">TAX ROG 01</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_versa"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_rogelio"/>
+          <field name="gps1_id" ref="gps_rogelio"/>
+      </record>
+
+
+
+
+<!--
+
+
+
+-->
+</odoo>

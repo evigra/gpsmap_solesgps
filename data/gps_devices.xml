@@ -1,0 +1,222 @@
+<odoo>
+    <record id="gps_uhcam01" model="gps_devices"> 
+        <field name="name">UHCAM 01 </field>
+        <field name="uniqueid">864895030052433</field>
+        <field name="icc">8934076200005432585</field>
+        <field name="company_id" ref="company_uhcam_gustavo"/>        
+    </record>
+
+    <record id="gps_uhcam02" model="gps_devices"> 
+        <field name="name">UHCAM 02 </field>
+        <field name="uniqueid">864895034507333</field>
+        <field name="icc">8934071200001588690</field>
+        <field name="company_id" ref="company_uhcam_gustavo"/>        
+    </record>
+
+    <record id="gps_uhcam03" model="gps_devices"> 
+        <field name="name">UHCAM 03 </field>
+        <field name="uniqueid">352672104475157</field>
+        <field name="icc">8934071200003860600</field>
+        <field name="company_id" ref="company_uhcam_gustavo"/>        
+    </record>
+
+    <record id="gps_uhcam12" model="gps_devices"> 
+        <field name="name">UHCAM 12 </field>
+        <field name="uniqueid">864180037466427</field>
+        <field name="icc">8934075200004312227</field>
+        <field name="company_id" ref="company_uhcam"/>        
+    </record>
+
+    <record id="gps_uhcam62" model="gps_devices"> 
+        <field name="name">UHCAM 62 </field>
+        <field name="uniqueid">864895032998823</field>
+        <field name="icc">8934071200001499633</field>
+        <field name="company_id" ref="company_uhcam"/>        
+    </record>
+
+    <record id="gps_uhcam64" model="gps_devices"> 
+        <field name="name">UHCAM 64 </field>
+        <field name="uniqueid">352672104135991</field>
+        <field name="icc">8934076200005431884</field>
+        <field name="company_id" ref="company_uhcam"/>        
+    </record>
+
+    <record id="gps_uhcam64_2" model="gps_devices"> 
+        <field name="name">UHCAM 64 -2</field>
+        <field name="uniqueid">864895032998484</field>
+        <field name="icc">8934071200001588716</field>
+        <field name="company_id" ref="company_uhcam"/>        
+    </record>
+
+    <record id="gps_uhcam65" model="gps_devices"> 
+        <field name="name">UHCAM 65 </field>
+        <field name="uniqueid">864180035485049</field>
+        <field name="icc">8934071200001483009</field>
+        <field name="company_id" ref="company_uhcam"/>        
+    </record>
+
+    <record id="gps_uhcam412" model="gps_devices"> 
+        <field name="name">L E 412 </field>
+        <field name="uniqueid">352672103174736</field>
+        <field name="icc">8934071200001588732</field>
+        <field name="company_id" ref="company_uhcam_lucero"/>        
+    </record>
+    <record id="gps_uhcam419" model="gps_devices"> 
+        <field name="name">L E 419 </field>
+        <field name="uniqueid">352672103889937</field>
+        <field name="icc">8934071200003858885</field>
+        <field name="company_id" ref="company_uhcam_lucero"/>        
+    </record>
+    <record id="gps_uhcam393" model="gps_devices"> 
+        <field name="name">L E 393 </field>
+        <field name="uniqueid">352672104146808</field>
+        <field name="icc">8934071200003858885</field>
+        <field name="company_id" ref="company_uhcam_lucero"/>        
+    </record>
+
+
+
+    <record id="gps_versa" model="gps_devices"> 
+        <field name="name">VERSA YO FTB5754</field>
+        <field name="uniqueid">868683027591142</field>
+        <field name="icc">8934071200001482985</field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+    <record id="gps_fiesta" model="gps_devices"> 
+        <field name="name">Fiesta</field>
+        <field name="uniqueid">352672102191467</field>
+        <field name="icc">8934071500003828139</field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+
+
+    <record id="gps_norma" model="gps_devices"> 
+        <field name="name">Norma</field>
+        <field name="uniqueid">864926030226170</field>
+        <field name="icc">8934071500003828550</field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+
+    <record id="gps_movil" model="gps_devices"> 
+        <field name="name">Movil Iman</field>
+        <field name="uniqueid">864925030143039</field>
+        <field name="icc">8934071200001588724</field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+
+    <record id="gps_gv300" model="gps_devices"> 
+        <field name="name">GV3004</field>
+        <field name="uniqueid">861074022305513</field>
+        <field name="icc">8934071200001482985</field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+
+    <record id="gps_gt06" model="gps_devices"> 
+        <field name="name">GT06 - 1297</field>
+        <field name="uniqueid">352672104131297</field>
+        <field name="icc"></field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+
+    <record id="gps_gt" model="gps_devices"> 
+        <field name="name">GT - 5731</field>
+        <field name="uniqueid">028042257731</field>
+        <field name="icc"></field>
+        <field name="company_id" ref="base.main_company"/>        
+    </record>
+
+
+
+    <record id="gps_mixteca01" model="gps_devices"> 
+        <field name="name">MIXTECA 01</field>
+        <field name="uniqueid">864180034378708</field>
+        <field name="icc">8934071200003858893</field>
+        <field name="company_id" ref="company_mixteca"/>        
+    </record>
+
+    <record id="gps_mixteca02" model="gps_devices"> 
+        <field name="name">MIXTECA 02</field>
+        <field name="uniqueid">352672104476411</field>
+        <field name="icc">8934071200003860337</field>
+        <field name="company_id" ref="company_mixteca"/>        
+    </record>
+
+    <record id="gps_michoacana01" model="gps_devices"> 
+        <field name="name">Michoacana 01</field>
+        <field name="uniqueid">352672103889515</field>
+        <field name="icc">8934075200004313712</field>
+        <field name="company_id" ref="company_michoacana"/>        
+    </record>
+
+    <record id="gps_michoacana02" model="gps_devices"> 
+        <field name="name">Michoacana 02</field>
+        <field name="uniqueid">352672103888947</field>
+        <field name="icc">8934071200001588724</field>
+        <field name="company_id" ref="company_michoacana"/>        
+    </record>
+
+
+    <record id="gps_rogelio" model="gps_devices"> 
+        <field name="name">TAX ROG 01 </field>
+        <field name="uniqueid">864895034504801</field>
+        <field name="icc"></field>
+        <field name="company_id" ref="company_rogelio"/>        
+    </record>
+
+    <record id="gps_sandoval01" model="gps_devices"> 
+        <field name="name">TSAND 01 </field>
+        <field name="uniqueid">864895031419375</field>
+        <field name="icc"></field>
+        <field name="company_id" ref="company_tsandoval"/>        
+    </record>
+
+    <record id="gps_diaz01" model="gps_devices"> 
+        <field name="name">TDIAZ 01 </field>
+        <field name="uniqueid">864895032995696</field>
+        <field name="icc">8934071200001482977</field>
+        <field name="company_id" ref="company_tdiaz"/>        
+    </record>
+
+    <record id="gps_samudio01" model="gps_devices"> 
+        <field name="name">TSAM 01 </field>
+        <field name="uniqueid">864895032997759</field>
+        <field name="icc">8934071200001499724</field>
+        <field name="company_id" ref="company_tsamudio"/>        
+    </record>
+
+    <record id="gps_samudio02" model="gps_devices"> 
+        <field name="name">TSAM 02 </field>
+        <field name="uniqueid">864895032999599</field>
+        <field name="icc">8934071200001499716</field>
+        <field name="company_id" ref="company_tsamudio"/>        
+    </record>
+
+    <record id="gps_bucio01" model="gps_devices"> 
+        <field name="name">TBUC 01 </field>
+        <field name="uniqueid">864895034394401</field>
+        <field name="icc">8934071200001500406</field>
+        <field name="company_id" ref="company_tbucio"/>        
+    </record>
+
+    <record id="gps_bucio02" model="gps_devices"> 
+        <field name="name">TBUC 02 </field>
+        <field name="uniqueid">864895034394492</field>
+        <field name="icc">8934071200001499674</field>
+        <field name="company_id" ref="company_tbucio"/>        
+    </record>
+
+    <record id="gps_proguz01" model="gps_devices"> 
+        <field name="name">PROGUZ 01</field>
+        <field name="uniqueid">864180035422802</field>
+        <field name="icc">8934071200001499682</field>
+        <field name="company_id" ref="company_proguz"/>        
+    </record>
+
+    <record id="gps_proguz02" model="gps_devices"> 
+        <field name="name">PROGUZ 02</field>
+        <field name="uniqueid">864180036785603</field>
+        <field name="icc">8934071200001588682</field>
+        <field name="company_id" ref="company_proguz"/>        
+    </record>
+
+</odoo>
