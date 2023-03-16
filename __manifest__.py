@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
-    'name' : 'GPSMap Soles',
+    'name' : 'GPSMap SolesGPS',
     'price' : '0.0',
     'currency' : 'EUR',
+    'license' : 'LGPL-3',
     'images': ['static/description/map_online.png'],    
     'author': "SolesGPS :: Eduardo Vizcaino",
     'category': 'fleet, GPS, Geolocation',
+    "version": "15.0.0.0.0",
     'website' : 'https://solesgps.com',
     'summary' : 'Locate the satellite coordinates that your GPS devices throw. Save that information here and see it on the map.',
     'description' : """
@@ -31,10 +33,13 @@ Main Features
         #'website_crm',
     ],
     'data': [
+        'data/ir_config_parameter.xml',
+        
         'data/res_company_data.xml',
         'data/res_users.xml',
         'data/gps_devices.xml',
         'data/fleet_vehicle.xml',
+        
         
         'security/security.xml',
         'views/views.xml',

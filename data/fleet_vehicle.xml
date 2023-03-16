@@ -19,6 +19,25 @@
           <field name="company_id" ref="company_uhcam_gustavo"/>
           <field name="gps1_id" ref="gps_uhcam01"/>
       </record>
+      <record id="vehicle_uhcam_02" model="fleet.vehicle">
+          <field name="license_plate">17AL6J</field>
+          <field name="economic_number">UHCAM 002</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam_gustavo"/>
+          <field name="gps1_id" ref="gps_uhcam02"/>
+      </record>
+      <record id="vehicle_uhcam_03" model="fleet.vehicle">
+          <field name="license_plate">Desc</field>
+          <field name="economic_number">UHCAM 003</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_uhcam_gustavo"/>
+          <field name="gps1_id" ref="gps_uhcam03"/>
+      </record>
+
       <record id="vehicle_uhcam_12" model="fleet.vehicle">
           <field name="license_plate">724EW3</field>
           <field name="economic_number">UHCAM 012</field>
@@ -78,19 +97,56 @@
           <field name="gps1_id" ref="gps_mixteca02"/>
       </record>
 
+      <record id="vehicle_misteca03" model="fleet.vehicle">
+          <field name="license_plate">15AH8P</field>
+          <field name="economic_number">MIX 03</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_mixteca"/>
+          <field name="gps1_id" ref="gps_mixteca03"/>
+      </record>
+
+      <record id="vehicle_misteca05" model="fleet.vehicle">
+          <field name="license_plate">22AZ2E</field>
+          <field name="economic_number">MIX 05</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="company_mixteca"/>
+          <field name="gps1_id" ref="gps_mixteca05"/>
+      </record>
+
 
       <record id="vehicle_rogelio" model="fleet.vehicle">
           <field name="license_plate">298-DVB</field>
           <field name="economic_number">TAX ROG 01</field>
-          <field name="model_id" ref="gpsmap.vehicle_model_versa"/>        
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
           <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
           <field name="odometer_unit">kilometers</field>
           <field name="company_id" ref="company_rogelio"/>
           <field name="gps1_id" ref="gps_rogelio"/>
       </record>
 
+      <record id="vehicle_versa" model="fleet.vehicle">
+          <field name="license_plate">FTB5754</field>
+          <field name="economic_number">Versa</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="gps1_id" ref="gps_versa"/>
+      </record>
 
-
+      <record id="vehicle_norma" model="fleet.vehicle">
+          <field name="license_plate">Norma</field>
+          <field name="economic_number">Norma</field>
+          <field name="model_id" ref="gpsmap.vehicle_model_kenworth"/>        
+          <field name="state_id" ref="fleet.fleet_vehicle_state_registered"/>
+          <field name="odometer_unit">kilometers</field>
+          <field name="company_id" ref="base.main_company"/>
+          <field name="gps1_id" ref="gps_norma"/>
+      </record>
 
 <!--
 

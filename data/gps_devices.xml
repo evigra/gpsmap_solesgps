@@ -3,8 +3,12 @@
         <field name="name">UHCAM 01 </field>
         <field name="uniqueid">864895030052433</field>
         <field name="icc">8934076200005432585</field>
-        <field name="company_id" ref="company_uhcam_gustavo"/>        
+        <field name="company_id" ref="company_uhcam_gustavo" />
     </record>
+
+    <!--
+                <field  name="company_ids" eval="[(6,0,[ref('base.main_company')])]"/>
+    -->
 
     <record id="gps_uhcam02" model="gps_devices"> 
         <field name="name">UHCAM 02 </field>
@@ -141,6 +145,20 @@
         <field name="company_id" ref="company_mixteca"/>        
     </record>
 
+    <record id="gps_mixteca03" model="gps_devices"> 
+        <field name="name">MIXTECA 03</field>
+        <field name="uniqueid">352672105871099</field>
+        <field name="icc">8934075200004238562</field>
+        <field name="company_id" ref="company_mixteca"/>        
+    </record>
+
+    <record id="gps_mixteca05" model="gps_devices"> 
+        <field name="name">MIXTECA 05</field>
+        <field name="uniqueid">352672105870190</field>
+        <field name="icc">8934076200005432593</field>
+        <field name="company_id" ref="company_mixteca"/>        
+    </record>
+    
     <record id="gps_michoacana01" model="gps_devices"> 
         <field name="name">Michoacana 01</field>
         <field name="uniqueid">352672103889515</field>
@@ -217,6 +235,12 @@
         <field name="uniqueid">864180036785603</field>
         <field name="icc">8934071200001588682</field>
         <field name="company_id" ref="company_proguz"/>        
+    </record>
+
+    <record id="gps_hugo" model="gps_devices"> 
+        <field name="name">PROGUZ 02</field>
+        <field name="uniqueid">636847</field>
+        <field name="company_id" ref="company_developer"/>        
     </record>
 
 </odoo>
