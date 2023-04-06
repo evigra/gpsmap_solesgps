@@ -8,7 +8,7 @@
     'images': ['static/description/map_online.png'],    
     'author': "SolesGPS :: Eduardo Vizcaino",
     'category': 'fleet, GPS, Geolocation',
-    "version": "15.0.0.0.0",
+    "version": "16.0.0.0.0",
     'website' : 'https://solesgps.com',
     'summary' : 'Locate the satellite coordinates that your GPS devices throw. Save that information here and see it on the map.',
     'description' : """

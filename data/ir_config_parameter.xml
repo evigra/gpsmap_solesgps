@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="gpsmap.solesgps_host" model="ir.config_parameter">         
-        <field name="value">http://server.solesgps.com:8016</field>
+        <field name="value">http://server_16.solesgps.com:7916</field>
     </record>
 
     
@@ -12,7 +12,7 @@
         <field name="value">admin</field>
     </record>
     <record id="gpsmap.solesgps_db" model="ir.config_parameter"> 
-        <field name="value">produccion</field>
+        <field name="value">server_16</field>
     </record>
     
     <record id="solesgps_sync_devices" model="ir.config_parameter">
